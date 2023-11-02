@@ -1,11 +1,20 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+
+    //파이어베이스
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.example.consum_app"
     compileSdk = 33
+
+    // 파이어베이스
+    // viewBinding {
+    //    enable = true
+    //}
+    //
 
     dataBinding {
         enable = true
@@ -37,6 +46,17 @@ android {
 }
 
 dependencies {
+
+    // 파이어베이스
+    implementation(platform("com.google.firebase:firebase-bom:32.5.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
+    // 파이어베이스 _ 로그인/인증
+    implementation("com.google.firebase:firebase-auth-ktx::22.2.0")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+    implementation ("androidx.multidex:multidex:2.0.1")
+
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
