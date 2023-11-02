@@ -1,24 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-<LinearLayout
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20sp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="테스트"/>
-
-
-    <TextView
         android:id="@+id/textView"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:text="소비기한 알림 앱"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="359dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="test2" />
-</LinearLayout>
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="184dp"
+        android:text="제품 등록하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="사진으로 등록하기"
+        app:layout_constraintStart_toStartOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="제품 조회하기"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="클릭한 날짜에 저장된 정보"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
