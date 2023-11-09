@@ -23,8 +23,28 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp" />
 
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="클릭한 날짜에 저장된 정보">
+        </TextView>
 
-
+        <Button
+            android:id="@+id/regist_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제품등록하기"></Button>
+        <Button
+            android:id="@+id/regist_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사진으로 등록하기"></Button>
+        <Button
+            android:id="@+id/product_inquiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제품조회하기"></Button>
     </LinearLayout>
 
 
