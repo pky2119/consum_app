@@ -19,8 +19,9 @@
             android:exported="false" />
         <activity
             android:name=".AuthActivity"
+            android:exported="false" />
+        <activity
             android:name=".Regist_Infomation"
-
             android:exported="false" />
         <activity
             android:name=".MainCalendar"
