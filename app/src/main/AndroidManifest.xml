@@ -14,10 +14,13 @@
         android:theme="@style/Theme.Consum_app"
         tools:targetApi="31">
         <activity
+
             android:name=".AuthFirebaseActivity"
             android:exported="false" />
         <activity
             android:name=".AuthActivity"
+            android:name=".Regist_Infomation"
+
             android:exported="false" />
         <activity
             android:name=".MainCalendar"
