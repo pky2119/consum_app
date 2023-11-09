@@ -1,9 +1,11 @@
+package com.example.consum_app
+
+
 import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.example.consum_app.R
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
