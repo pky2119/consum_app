@@ -7,7 +7,7 @@ import android.widget.Toast
 import java.util.Locale
 import java.text.SimpleDateFormat
 
-class Calendar : AppCompatActivity() {
+class MainCalendar : AppCompatActivity() {
     private lateinit var calendarView: CalendarView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

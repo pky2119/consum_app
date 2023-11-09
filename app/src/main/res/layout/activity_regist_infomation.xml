@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:context=".Regist_Infomation">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="등록된 상품"
+            android:gravity="center"
+            android:textSize="24dp"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:id="@+id/rectify_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/rectify_name"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제품명 : "
+                    android:textSize="16dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/rectify_date"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제품 구매일 : "
+                    android:textSize="16dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/rectify_price"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제품 가격 : "
+                    android:textSize="16dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/rectify_expiration_date"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="소비기한 : "
+                    android:textSize="16dp">
+                </TextView>
+                <TextView
+                    android:id="@+id/rectify_Remaining_expiration_date"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남은 소비기한 : "
+                    android:textSize="16dp">
+                </TextView>
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/alarm"
+                    android:text="알림설정"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </androidx.appcompat.widget.SwitchCompat>
+
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/rectify_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제품수정하기"></Button>
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제품삭제하기"></Button>
+    </LinearLayout>
+</layout>
